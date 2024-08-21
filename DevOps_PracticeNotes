@@ -157,8 +157,4 @@ Conditions
 loops
 Fundtions 
 
-git clone <URL> --> clone the code
-git add <file-name> --> to add files to staging area
-git commit -m "meaningful message" --> commit to local repo
-git push origin master --> push changes to central repo
 
