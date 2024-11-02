@@ -1,0 +1,177 @@
+DevOps technical interview questions which I attended recently...
+1. Day to day 𝗮𝗰𝘁𝗶𝘃𝗶𝘁𝗶𝗲𝘀 in DevOps Cloud. 
+2. How effective did you used 𝗞𝘂𝗯𝗲𝗿𝗻𝗲𝘁𝗲𝘀 and 𝗗𝗼𝗰𝗸𝗲𝗿 in day to day activity. 
+3. What happens when you run a container in Kubernetes? Explain the internal workings. 
+4. Can you explain the 𝘀𝗲𝗰𝘂𝗿𝗶𝘁𝘆 𝗳𝗲𝗮𝘁𝘂𝗿𝗲𝘀 which is available in 𝗞𝘂𝗯𝗲𝗿𝗻𝗲𝘁𝗲𝘀. 
+5. Can you explain the 𝗰𝗼𝗺𝗽𝗼𝗻𝗲𝗻𝘁𝘀 of 𝗞𝘂𝗯𝗲𝗿𝗻𝗲𝘁𝗲𝘀. 
+6. Are you aware of the 𝗲𝘅𝗶𝘁 𝗰𝗼𝗱𝗲. 
+7. There is an existing 𝗽𝗼𝗱 which is 𝗻𝗼𝘁 getting 𝘀𝗰𝗵𝗲𝗱𝘂𝗹𝗲𝗱. How will you fix this issue. 
+8. You have the exposure to 𝗶𝗻𝗰𝗶𝗱𝗲𝗻𝘁 𝗺𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁 right? How will you 𝗰𝗮𝘁𝗲𝗴𝗼𝗿𝗶𝘇𝗲 the 𝗽𝗿𝗶𝗼𝗿𝗶𝘁𝘆 
+9. How do Prometheus and Grafana interact? What is the source of data for Prometheus?. 
+10. Explain how Linux mechanisms work, especially when the system starts.. 
+11. How can we enable communication between 500 AWS accounts internally?
+12. Difference between 𝗜𝗥 and 𝗦𝗥 
+13. What about the 𝗺𝗼𝗻𝗶𝘁𝗼𝗿𝗶𝗻𝗴 part. Do you have any exposure to that? 
+14. What are the things you will do with respect to the 𝗺𝗼𝗻𝗶𝘁𝗼𝗿𝗶𝗻𝗴? 
+15. Define 𝗹𝗼𝗴𝘀 and 𝗺𝗲𝘁𝗿𝗶𝗰𝘀 
+16. So let's consider, in your 𝗱𝗮𝘀𝗵𝗯𝗼𝗮𝗿𝗱, you observed from one application or one 𝗰𝗹𝘂𝘀𝘁𝗲𝗿 the 𝘂𝘁𝗶𝗹𝗶𝘇𝗮𝘁𝗶𝗼𝗻 was 𝗵𝗶𝗴𝗵. Which were you can identify using the 𝗱𝗮𝘀𝗵𝗯𝗼𝗮𝗿𝗱 with the 𝗺𝗲𝘁𝗿𝗶𝗰𝘀 which is already created. So what will be the first step and how will you 𝗳𝗶𝘅 the 𝗶𝘀𝘀𝘂𝗲. 
+17. Do you have any experience in 𝗰𝗿𝗲𝗮𝘁𝗶𝗻𝗴 the 𝗺𝗼𝗻𝗶𝘁𝗼𝗿𝘀? 
+18. What is a sidecar container in Kubernetes, and what are its use cases?
+19. Do you have any exposure to 𝗜𝗔𝗖 tools like 𝗧𝗲𝗿𝗿𝗮𝗳𝗼𝗿𝗺? 
+20. Write some sample 𝗗𝗼𝗰𝗸𝗲𝗿𝗳𝗶𝗹𝗲 to create an 𝗡𝗴𝗶𝗻𝘅 𝗶𝗺𝗮𝗴𝗲 
+21. What do you know about 𝘁𝗲𝘀𝘁𝗶𝗻𝗴
+
+****Common interview Question For Cloud & DevOps****
+1. What scripting languages are you familiar with?
+2. What are artifacts in GitLab CI?
+3. What is a private module registry in Terraform?
+4. If you delete the local Terraform state file and it's not stored in S3 or DynamoDB, how can you recover it?
+5. How do you import resources into Terraform?
+6. What is a dynamic block in Terraform?
+7. How can you create EC2 instances in two different AWS accounts simultaneously using Terraform?
+8. How do you handle an error stating that the resource already exists when creating resources with Terraform?
+9. How does Terraform refresh work?
+10. How would you upgrade Terraform plugins?
+11. What are the different types of Kubernetes volumes?
+12. If a pod is in a crash loop, what might be the reasons, and how can you recover it?
+13. What is the difference between StatefulSet and DaemonSet?
+14. What is a sidecar container in Kubernetes, and what are its use cases?
+15. If pods fail to start during a rolling update, what strategy would you use to identify the issue and rollback?
+16. How can we enable communication between 500 AWS accounts internally?
+17. How to configure a solution where a Lambda function triggers on an S3 upload and updates DynamoDB?
+18. What is the standard port for RDP?
+19. How do you configure a Windows EC2 instance to join an Active Directory domain?
+20. How can you copy files from a Linux server to an S3 bucket?
+21. What permissions do you need to grant for that S3 bucket?
+22. What are the different types of VPC endpoints and when do you use them?
+23. How to resolve an image pullback error when using an Alpine image pushed to ECR in a pipeline?
+24. What is the maximum size of an S3 object?
+25. What encryption options do we have in S3?
+26. Can you explain IAM user, IAM role, and IAM group in AWS?
+27. What is the difference between an IAM role and an IAM policy document?
+28. What are inline policies and managed policies?
+29. How can we add a load balancer to Route 53?
+30. What are A records and CNAME records?
+31. What is the use of a target group in a load balancer?
+32. If a target group is unhealthy, what might be the reasons?
+33. Can you share your screen and write a Jenkins pipeline?
+34. How do you write parallel jobs in a Jenkins pipeline?
+----------------------------------------------------------------------------------
+Maven & Jenkins Cheat Sheet for DevOps Engineers!
+
+For DevOps engineers, Maven and Jenkins are essential for streamlined builds and CI/CD. Here’s a quick guide to master these tools:
+
+🔹 Maven Essentials 
+ - Lifecycle Phases: From `mvn compile` to `mvn test`, `mvn package`, and `mvn install`, Maven automates the entire build process.
+ - POM.xml: Central config for dependencies, project metadata, and output (.jar/.war/.ear).
+ - Quick Build: Use `mvn clean package` to clean and package code in one command.
+
+🔹 Jenkins Setup 
+ - Installation: Install Java and Jenkins on an EC2 instance, start Jenkins with `systemctl start jenkins`, and automate CI/CD seamlessly.
+ - Pipeline Integration: Build, test, and deploy projects automatically with Jenkins pipelines.
+
+🚀 Why It’s Essential 
+Mastering Maven & Jenkins brings efficiency to builds, testing, and deployment, essential for any DevOps workflow. Get hands-on and take your DevOps skills to the next level! 💡
+---------------------------------------------------------------------------------
+Recently Faced These Interview Questions – Sharing to Help You Ace Yours! 
+
+Designation : AWS DEVOPS ENGINEER 
+Experience : 3-5 years 
+
+1.Explain Jenkins CI/CD.
+2.Write Terraform code for an S3 bucket and attach a policy. 
+3.I want to run my job today at 5 pm how do you configure it? 
+4.What IAM policy? 
+5.Write a Terraform code for EC2? 
+6.Explain about GIT Branching in your project. 
+7.Write a sample playbook. 
+8.What are Glacier and Snowball? 
+9.Where do you check build logs in Jenkins? 
+10.What is CORS in s3? 
+11.What has required one resource it was to communicate with other resources? 
+12. How can we pass an argument to Docker File? 
+13. What are deployment strategies? 
+14. What is called an application load balancer?
+15. How Kube proxy will allocate the Ip address to pods?
+16. How u will configure VPC 
+17. If there is suddenly the file is deleted in git how do you get it back? 
+18. How do you configure the job in Jenkins? 
+19. Write a script for how to push the repository and build the job in Jenkins. 
+20. What is the use of the Jira tool? 
+21. As a DevOps engineer why do we use Jira Tool?
+-------------------------------------------------------------------------------------------------
+𝟏.𝐓𝐞𝐥𝐥 𝐦𝐞 𝐚𝐛𝐨𝐮𝐭 𝐲𝐨𝐮𝐫 𝐩𝐫𝐨𝐣𝐞𝐜𝐭
+
+My project is about automating deployment pipelines with CI/CD tools, managing infrastructure with Terraform, and using Kubernetes to organize containers.
+
+𝟐.𝐇𝐨𝐰 𝐝𝐨𝐞𝐬 𝐆𝐢𝐭𝐋𝐚𝐛 𝐭𝐫𝐢𝐠𝐠𝐞𝐫 𝐩𝐢𝐩𝐞𝐥𝐢𝐧𝐞𝐬 𝐚𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐜𝐚𝐥𝐥𝐲 𝐰𝐡𝐞𝐧 𝐚 𝐝𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 𝐩𝐮𝐬𝐡𝐞𝐬 𝐜𝐨𝐝𝐞?
+
+GitLab triggers pipelines automatically when a developer pushes code by using webhooks.
+some additional methods by which GitLab can trigger pipelines automatically:
+1. Merge Requests
+2. Scheduled Pipelines
+3. API Triggers
+4. Manual Triggers
+
+𝟑.𝐇𝐨𝐰 𝐝𝐨 𝐲𝐨𝐮 𝐝𝐞𝐜𝐥𝐚𝐫𝐞 𝐝𝐞𝐩𝐞𝐧𝐝𝐞𝐧𝐭 𝐬𝐭𝐚𝐠𝐞𝐬 𝐢𝐧 𝐚 𝐂𝐈/𝐂𝐃 𝐘𝐀𝐌𝐋 𝐟𝐢𝐥𝐞?
+
+We can declare dependent stages using the stages keyword and specifying the order of execution. For example:
+
+stages:
+ - build
+ - test
+ - deploy
+
+𝟒. 𝐖𝐡𝐚𝐭 𝐢𝐬 `𝐭𝐞𝐫𝐫𝐚𝐟𝐨𝐫𝐦 𝐢𝐧𝐢𝐭`?
+
+This command initializes a Terraform working directory by downloading necessary provider plugins and setting up the backend configuration.
+
+𝟓.𝐖𝐡𝐚𝐭 𝐢𝐬 `𝐛𝐚𝐜𝐤𝐞𝐧𝐝.𝐭𝐟`?
+
+This file typically contains configuration settings for remote state storage, defining how and where Terraform state is stored (e.g., S3, Azure Blob Storage).
+
+𝟔. 𝐖𝐡𝐚𝐭 𝐝𝐨𝐞𝐬 `𝐭𝐞𝐫𝐫𝐚𝐟𝐨𝐫𝐦 𝐩𝐥𝐚𝐧 𝐝𝐨?
+
+This command generates an execution plan, showing what actions Terraform will take to change the current state to match the desired state defined in the configuration files.
+
+𝟕. 𝐖𝐡𝐚𝐭 𝐡𝐚𝐩𝐩𝐞𝐧𝐬 𝐢𝐟 𝐲𝐨𝐮 𝐠𝐢𝐯𝐞 𝐭𝐡𝐞 𝐰𝐫𝐨𝐧𝐠 𝐜𝐨𝐧𝐟𝐢𝐠𝐮𝐫𝐚𝐭𝐢𝐨𝐧 𝐨𝐫 𝐜𝐨𝐝𝐞 𝐢𝐧 𝐓𝐞𝐫𝐫𝐚𝐟𝐨𝐫𝐦 𝐚𝐧𝐝 𝐫𝐮𝐧 𝐢𝐭?
+
+Wrong Configuration: If you provide incorrect configuration, Terraform will fail to plan or apply changes, usually producing error messages that indicate the issues with the configuration.
+
+𝟖. 𝐖𝐡𝐞𝐫𝐞 𝐝𝐨 𝐲𝐨𝐮 𝐬𝐭𝐨𝐫𝐞 𝐃𝐨𝐜𝐤𝐞𝐫 𝐢𝐦𝐚𝐠𝐞𝐬?
+
+Docker images are commonly stored in registries like Docker Hub, AWS ECR, or other private registries.
+
+𝟗. 𝐃𝐞𝐬𝐜𝐫𝐢𝐛𝐞 𝐭𝐡𝐞 `𝐩𝐨𝐝` 𝐜𝐨𝐦𝐦𝐚𝐧𝐝?
+
+In Kubernetes, the pod command is part of the kubectl command-line tool, which is used to manage Kubernetes clusters.
+
+1.𝐆𝐞𝐭 𝐏𝐨𝐝𝐬:
+To list all pods in a namespace:
+
+kubectl get pods
+
+2. 𝐃𝐞𝐬𝐜𝐫𝐢𝐛𝐞 𝐚 𝐏𝐨𝐝:
+To get detailed information about a specific pod:
+
+kubectl describe pod <pod-name>
+
+3. 𝐂𝐫𝐞𝐚𝐭𝐞 𝐚 𝐏𝐨𝐝:
+To create a pod from a YAML configuration file:
+
+kubectl apply -f <pod-definition.yaml>
+
+4. 𝐃𝐞𝐥𝐞𝐭𝐞 𝐚 𝐏𝐨𝐝:
+To delete a specific pod:
+
+kubectl delete pod <pod-name>
+
+5.𝐋𝐨𝐠𝐬:
+To view the logs of a pod:
+kubectl logs <pod-name>
+
+𝟏𝟎. 𝐇𝐨𝐰 𝐝𝐨 𝐲𝐨𝐮 𝐝𝐞𝐜𝐥𝐚𝐫𝐞 𝐜𝐨𝐧𝐭𝐞𝐱𝐭 𝐢𝐧 𝐊𝐮𝐛𝐞𝐫𝐧𝐞𝐭𝐞𝐬 ?
+
+You declare context using the kubectl config command, specifying the cluster, user, and namespace.
+------------------------------------------------------------------------------------------------------------------
+
