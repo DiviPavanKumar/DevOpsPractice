@@ -162,3 +162,33 @@ git add <file-name> --> to add files to staging area
 git commit -m "meaningful message" --> commit to local repo
 git push origin master --> push changes to central repo
 
+Load Balancers | Reverse Proxy | Forward Proxy
+
+Load Balancer
+- A load balancer distributes incoming network traffic across multiple backend servers (or 
+instances) to ensure no single server is overwhelmed.
+- Purpose: To improve reliability, scalability, and performance by balancing the workload 
+among several servers.
+- Use Case:
+○ Web Applications: Ensures availability by distributing user requests across 
+multiple servers.
+
+Reverse Proxy
+- A reverse proxy sits in front of backend servers and forwards client requests to them. It 
+typically receives requests on behalf of servers and can modify or inspect the requests 
+before passing them along.
+- Purpose: To provide security, load distribution, caching, and SSL termination for 
+backend servers.
+- Use Case:
+○ Web Acceleration: Caches static content to improve response times for users.
+
+Forward Proxy
+- A forward proxy stands between client devices and the internet, making requests to 
+servers on behalf of clients. It’s often used for internet access control, content filtering, 
+and privacy.
+- Purpose: To control or filter outbound client traffic, or to anonymize client IPs when 
+accessing the internet.
+- Use Case:
+○ Content Filtering: Used in corporate networks to block access to restricted 
+websites.
+
