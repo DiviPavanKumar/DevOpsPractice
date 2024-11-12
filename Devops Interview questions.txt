@@ -260,3 +260,32 @@ again”?
 20. Your team needs to be alerted when the CPU usage of any Pod in your EKS cluster exceeds 80% for more than 5 minutes. How would you set this up?
 21. Your team wants a Grafana dashboard to visualize the HTTP request latency of your applications running in EKS. How would you achieve this?
 
+#interview hashtag#question for a hashtag#DevOps Engineer position.
+
+🔧 Git:
+
+What is the difference between GIT & GITHUB?
+What is a Distributed Version Control System (DVCS)?
+What is a Centralized Version Control System (CVCS)? Difference between DVCS & CVCS?
+How to overcome conflicts in Git?
+What is Git clone, git pull, and git patch?
+What are git merge and git stash?
+
+☁️ AWS:
+
+What is S3?
+What is Block Storage?
+How to grant access to a specific IP on S3?
+What are ASG policies?
+What is ElasticSearch?
+Difference between Application Load Balancer (ALB) and Network Load Balancer (NLB)?
+How to configure VPC peering?
+
+⚙️ Kubernetes, Terraform:
+
+What are the main components of Kubernetes?
+What is the flow of pod creation?
+What are services in Kubernetes?
+What is Continuous Delivery & Continuous Deployment?
+What are the key operations in Terraform?
+
