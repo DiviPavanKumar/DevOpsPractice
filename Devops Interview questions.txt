@@ -210,4 +210,25 @@ You declare context using the kubectl config command, specifying the cluster, us
 32. If a target group is unhealthy, what might be the reasons?
 33. Can you share your screen and write a Jenkins pipeline?
 34. How do you write parallel jobs in a Jenkins pipeline?
+----------------------------------------------------------------------------------------------------
+Hello All, please find today interview L1 Discussion questions with Wipro
+Q) What is your understanding of DevOps ? (First Question)
+Q) you mentioned in resume that setup of a Jenkins CICD pipeline to automate code integration and deployment achieved 25 % faster time to market, how you calculated this 25% on which basis ?
+Note: if you mentioned any % achieved then plan to explain how you calculated that % achievement
+Q) What is terraform taint ?
+Q) What are parameters in terraform ?
+Q) What is AWS Instance store ?
+Q) How did you handle cost management and alerting in AWS compared to your previous approach ?
+Q) What are critical challanges you faced while using in your Organization ?
+Q) What is CI process ?
+Q) How you configured CICD pipelines in your organization ?
+Q) What is AWS organization ?
+Q) What are Security and Governance services in AWS ?
+Q) What are the four R's in application cloud migration ?
+Q) How do connect private servers to internet ? (this is common Question in last 3 interviews)
+Q) What is hosted zone and why we use ? ( Common question in 2 interviews)
+Q) What is state file and where do you store it and explain state locking ?
+Q) What is your organization branching strategy ?
+Q) Using shell script get date every day at 2:00 AM using crontab ?
+Q) Have you used SQS and SNS in AWS ?
 
