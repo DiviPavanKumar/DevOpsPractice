@@ -289,3 +289,29 @@ What are services in Kubernetes?
 What is Continuous Delivery & Continuous Deployment?
 What are the key operations in Terraform?
 
+Day to Day activities of a DevOps Engineer ☀️
+
+Here’s a typical schedule:
+
+11:00 AM – Morning Sync
+Start the day with a quick team stand-up. We discuss ongoing tasks, deployment schedules, and any blockers. Communication keeps us aligned!
+
+11:30 AM – Monitoring Checks
+Dive into dashboards with Prometheus, Grafana. Scan for any unusual spikes or alerts. If there’s a red flag, it’s troubleshooting time!
+
+12:30 PM – Pipeline Optimizations
+Focus on improving CI/CD pipelines in Jenkins, GitHub Actions, or ArgoCD. Tweak workflows, automate tests, or add new steps to boost deployment efficiency.
+
+02:00 PM – Lunch Break
+
+03:30 PM – Automating Tasks
+Time to tackle routine tasks with scripts or manage infrastructure with Terraform. Automating manual work helps us scale and stay efficient.
+
+07:00 PM – Collaboration & Troubleshooting
+Spend time working with developers, DBAs, and security teams to solve issues, optimize systems, and brainstorm improvements.
+
+08:00 PM – End-of-Day Checks
+Review system health and double-check any final deployments. Ensure all systems are stable before signing off for the day.
+
+🔁 Repeat tomorrow, because in DevOps, we’re always evolving and improving
+
