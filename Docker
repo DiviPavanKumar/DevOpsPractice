@@ -1,0 +1,12 @@
+Docker:
+It is a open-source centralized platform designed to create, deploy, and run applications.
+Docuker is written on go language.
+Docuker uses container on host OS to run applications.
+we can install docker on any OS but docker engine natively runs on Linux distribution.
+Docker performs OS Level vertialization also known as containerization.
+It was initially release in march 2023, and developed by solomon and Sebastian pahl.
+
+Docker Architecture:
+Docker Client
+Docker Host
+Docker Registery

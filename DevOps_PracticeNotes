@@ -1,0 +1,218 @@
+Github:
+Username: divipavankumar92@gmail.com / pavandivi.kumar47@gmail.com
+Password: Nayansai@2021
+
+AWS Console:
+Username: divipavankumar15@gmail.com / divipavankumar92@gmail.com
+Password: Nayansai@2021
+
+DevOps is a process of creating co-operation between Dev Team and Ops Team for Faster Releases and Less Defects.
+Whenever Dev Team writes a code what devops do is from day 1 code has to be build and test
+
+Default Ports:
+https - 443
+http - 80
+mysql - 3306
+DNS - 53
+SMTP - 25
+FTTP - 20 and 21
+tomcat - 8080
+ssh - 22
+
+Whenever we start service, it will get the port from 0 - 65535 ports
+
+Launchg instance from putty:
+ppk - putty private key
+For generating ppk file - when u install putty app, there is software called putty gen. 
+in this putty gen, we have to load our pem file then click on save private key.
+
+setup for launching server:
+Give username in saved sessions
+give username <ec2-user> in connections-Data - login details
+import ppk file in Connections-ssh-Auth-crtedentials
+save
+
+Superputty - without putty, Superputty wont work
+
+Linux File System:
+/ root 
+/bin - contains essential user binaries(Executables), such as common commands like ls, cp, etc
+/boot - Holds files needed for system boot-up, including the linux kernel, an initial RAM Disk image,        bootloader configuration( Like GRUB)
+/dev - Contains device files which represent and provide access to hardware devices such as hard drives,        sound devices etc.
+/etc - Holds system config files. Ex: User, Network, Services, System Apps
+/home - contains the personal directories of all users.
+/lib and /ib64 - These directories contain  essential shared libraries and kernal modules that are needed to                 boot the system and run the cmnds in the root filessystem. The /lib64 directory exists on                 systems that support 64-bit applications.
+/media - This is mount point for removable media such as USB, Drives, CD-ROMs, etc. Ehen these devices are         mounted, typically, directories corresponding to their mount points are created within /media
+/mnt - similar to /media, this is a traditional mount point where system admin can mount temp filesystems       while using or config them.
+/opt - Intended for the installation of add-on app software packages. Large software package that are not       part of the default installation can be placed here to avoid cluttering the system directories.
+/proc - A virtuval and dynamic directory as it only exists in memory. It does not use disc space. It         contacis info about system resources, hardware and running processes. its a pseudo-filesystem that         provides an interface to kernal data structures.
+/root - The home directory for the root user(Admin)
+/run - A temp filesystem that stores transient state files, like process IDs or lock files, since it is       cleared and recreated at every boot
+/sbin - contains binary(executable) files that are mostly needed by the system admin. These include system        management cmds like fdisk, shutdown, ip..etc.
+/srv - contains data which servers hosted on the system may need, such as web pages served by a web server.
+/sys - similar to /proc, This is another virtuval filesystem that provides an interface to the kernel. It       contains info and settings about the system's devices, drivers and some kernel features.
+/tmp - Temporary files created by system and users.
+/usr - considered the secondary hierarchy because it contains all user app and variety of other things for       day-to-day operations, including libraries, documantation, and much more. Sub directories include /       usr/bin, /usr/sbin, /usr/local and /usr/share among others
+/var - where variable data such as logs and databases are stored.
+--------------------------------
+
+🦐 Linux Filesystem Hierarchy:
+
+Have you ever run the command "ls -l" in your root directory? If yes, you’ve probably seen a list of directories under the root. In this post, let’s explore 10 key directories in the Linux filesystem and understand what they are used for:
+
+🔷 / (Root Directory) - The top-level directory of the entire filesystem, everything is organized under this directory.
+🔷 /bin (Binaries) - Contains essential programs (binaries) that are ready to run, includes the most basic commands like cp, mv , ls and cat
+🔷 /boot (Boot Loader Files)- Stores files required for booting the system, including the kernel and bootloader configuration.
+🔷 /dev (Device Files) - Contains special files that represent hardware devices (e.g., /dev/sda for a hard drive).
+🔷 /etc (Configuration Files) - Holds system-wide configuration files,Should only contain configuration files, not binaries or executables.
+🔷 /home (User Home Directories) - Personal directories for users, stores user specific documents, files and settings.
+🔷 /lib (Libraries)- Contains shared libraries required by binaries in /bin and /sbin. Similar to .dll files on Windows.
+🔷 /media (Removable Media) - Used as a mount point for removable devices like USB drives, CDs, and DVDs.
+🔷 /mnt (Temporary Mount Points) - Used for temporarily mounting filesystems (e.g., network drives or external storage).
+🔷 /opt (Optional Software) - Contains optional or third-party software packages that are not part of the default system.
+💠 /proc: Holds information about processes currently running on the system.
+💠 /root: The home directory for the root (administrator) user.
+💠 /run: Stores data about the system's current state since the last reboot.
+💠 /sbin: Contains important system programs, usually only usable by the root user.
+💠 /srv: Stores data specific to services provided by the system (e.g., websites).
+💠 /tmp: A place for temporary files.
+💠 /usr: Despite its name, it usually doesn't store personal user files. It's for software and utilities installed by users, with subfolders like /usr/bin 
+💠/var: A directory for files that change frequently, like logs, caches, and user activity data.
+
+
+inode, Soft/Symbolic/Sys Link, Hard Link:
+
+inode - An inode is a data structure that keeps track of all files and directories within a linux or Unix-bases filesyste. So every file and directory in a filesystem is allocated an inode, which is identified by an integer known as "Inode Number"
+
+Soft/Symbolic/Sys Link: 
+Link for defenition: https://medium.com/@The_Anshuman/soft-link-and-hard-link-in-linux-3c0d7c1341c6
+
+In Linux, both soft links (symbolic links) and hard links are ways to create references to files or directories. They work differently and have distinct characteristics.
+
+Soft Link:
+A symbolic link, commonly known as a “soft link,” is a file type in Linux used to act as a reference or pointer to another file or directory. Symbolic links enable the creation of references to files and directories through their pathnames.
+
+A symbolic link is an independent file in its own right, possessing its own inode and data block. It retains the pathname of the target file or directory to which it points.
+
+Symbolic links are capable of spanning file systems, allowing them to reference files and directories located on diverse storage devices or partitions.
+
+Symbolic links have the unique ability to point to files or directories that may not currently exist or be accessible at the time of link creation. In cases where the target is absent when the link is accessed, it transforms into a “dangling” link.
+
+Symbolic links possess their own individual permissions and ownership settings. These settings are entirely separate from those of the target file or directory.
+
+Symbolic links are a valuable and versatile feature in the Linux operating system, serving a variety of purposes, including the creation of shortcuts, management of configuration files, and organization of data.
+$ ln -s <source-file> <link-filename>
+
+Hard Link
+In Linux, a hard link is a reference to an inode (a data structure that stores information about a file) of an existing file. Unlike symbolic links (soft links), hard links directly reference the underlying data blocks of a file. Here are some key characteristics and usage examples of hard links:
+
+Hard links point directly to the same inode as the original file. Inodes store information about the file’s metadata and data block locations.
+
+All hard links to the same file share the same data blocks, which means changes made to one hard link are reflected in all other hard links to the same file.
+
+Hard links can only be created within the same file system (i.e., on the same storage device or partition). You cannot create hard links across different file systems.
+
+Deleting one hard link to a file does not immediately remove the file’s content. The file’s data blocks are freed only when the last hard link to that file is removed.
+
+In summary, both symbolic links and hard links serve as references to files (or directories in the case of symbolic links). However, there is a fundamental distinction between them. Symbolic links are files that reference a different inode, while hard links share the same inode as the original file, directing to precisely the same data location on the hard drive.
+
+Public IP/ Private IP: 
+NAT - Network Address Transalation
+VPC - Virtual Private Cloud
+VPN - Virtual Private Network
+DNS - Domain Name System
+ISP - Internet Service Provider
+ISP Provides Public IP Addresss to Modem. 
+Letancy,
+Security, - These two are major reasons to use Private IP.
+
+Monolithic and Micro services:
+A monolithic architecture encapsulates an entire application within a single codebase and deployment unit. All functionalities, components, and modules are tightly integrated, forming a cohesive unit. In contrast, microservices break down the application into smaller, independent services, each responsible for a specific function. These services communicate through APIs, allowing for greater flexibility and scalability. 
+API - Application Programming Interface: An API call, or API request, is a message sent to a server asking an API to provide a service or information.
+All Microservices communicate with each through Private IP and API Calls.
+
+Security Groups - Firewall:
+Inbound: Traffic coming to your server
+Outbound: Traffic going out from your server
+
+AMI - Amazon Machine Image
+AMI: devops-practice
+Username: centos
+Password: DevOps321
+
+Proxy - Forward Proxy vs Reverse Proxy:
+Forward Proxy:
+Client-Centric: Client is aware of existence of proxy, we intentionally send the traffic through proxy server.
+Privacy and Anonymous: Forward proxy is used to hide the client IP address.
+Content Filtering and Access Control: We can restrict traffic out of the network through proxy.
+Caching: Frequently requested content can be cached here.
+
+Reverse Proxy:
+Server-Centric: Clients are unaware of the existence of reverse proxy, for clients it the website they are connecting.
+Load Balancing: Reverse proxies have load balancing capabilities.
+Security: Reverse proxy servers are the best for security. They protect the backend server programming and their IP addresses.
+SSL Termination: Reverse proxies can handle SSL/TLS encryption and decryption, relieving the backend servers from this resource-intensive task.  
+
+Poer no for web app: Nginx is 80
+$netstat -lntp - open port 80
+$ps -ef | grep <servicename>
+$systemctl status <servicename> 
+For Logs: cd /var/log/nginx Enter Then ls -l enter then tail -f access.log
+
+By default some servers mostly DB Servers, you can't open them apart from local server. This is for security.
+
+Redies: cache server
+rpm - redhat package manager
+yum- package manager
+Packages: Every package in redhat is rpm
+yum: It will automatically resolve the dependencies,it will fetch all the dependencies and install before installing the requested package.
+If you know dependencies you can install manaully through rpm packages
+
+Java:
+--------
+npm - Build tool for nodejs
+maven - build tool for java applications
+if you install mavenm it will automatically install java
+
+Shell Scripting:
+Variables
+Data Types
+Conditions
+loops
+Fundtions 
+
+git clone <URL> --> clone the code
+git add <file-name> --> to add files to staging area
+git commit -m "meaningful message" --> commit to local repo
+git push origin master --> push changes to central repo
+
+Load Balancers | Reverse Proxy | Forward Proxy
+
+Load Balancer
+- A load balancer distributes incoming network traffic across multiple backend servers (or 
+instances) to ensure no single server is overwhelmed.
+- Purpose: To improve reliability, scalability, and performance by balancing the workload 
+among several servers.
+- Use Case:
+○ Web Applications: Ensures availability by distributing user requests across 
+multiple servers.
+
+Reverse Proxy
+- A reverse proxy sits in front of backend servers and forwards client requests to them. It 
+typically receives requests on behalf of servers and can modify or inspect the requests 
+before passing them along.
+- Purpose: To provide security, load distribution, caching, and SSL termination for 
+backend servers.
+- Use Case:
+○ Web Acceleration: Caches static content to improve response times for users.
+
+Forward Proxy
+- A forward proxy stands between client devices and the internet, making requests to 
+servers on behalf of clients. It’s often used for internet access control, content filtering, 
+and privacy.
+- Purpose: To control or filter outbound client traffic, or to anonymize client IPs when 
+accessing the internet.
+- Use Case:
+○ Content Filtering: Used in corporate networks to block access to restricted 
+websites.
+

@@ -1,0 +1,741 @@
+DevOps technical interview questions which I attended recently...
+1. Day to day 𝗮𝗰𝘁𝗶𝘃𝗶𝘁𝗶𝗲𝘀 in DevOps Cloud. 
+2. How effective did you used 𝗞𝘂𝗯𝗲𝗿𝗻𝗲𝘁𝗲𝘀 and 𝗗𝗼𝗰𝗸𝗲𝗿 in day to day activity. 
+3. What happens when you run a container in Kubernetes? Explain the internal workings. 
+4. Can you explain the 𝘀𝗲𝗰𝘂𝗿𝗶𝘁𝘆 𝗳𝗲𝗮𝘁𝘂𝗿𝗲𝘀 which is available in 𝗞𝘂𝗯𝗲𝗿𝗻𝗲𝘁𝗲𝘀. 
+5. Can you explain the 𝗰𝗼𝗺𝗽𝗼𝗻𝗲𝗻𝘁𝘀 of 𝗞𝘂𝗯𝗲𝗿𝗻𝗲𝘁𝗲𝘀. 
+6. Are you aware of the 𝗲𝘅𝗶𝘁 𝗰𝗼𝗱𝗲. 
+7. There is an existing 𝗽𝗼𝗱 which is 𝗻𝗼𝘁 getting 𝘀𝗰𝗵𝗲𝗱𝘂𝗹𝗲𝗱. How will you fix this issue. 
+8. You have the exposure to 𝗶𝗻𝗰𝗶𝗱𝗲𝗻𝘁 𝗺𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁 right? How will you 𝗰𝗮𝘁𝗲𝗴𝗼𝗿𝗶𝘇𝗲 the 𝗽𝗿𝗶𝗼𝗿𝗶𝘁𝘆 
+9. How do Prometheus and Grafana interact? What is the source of data for Prometheus?. 
+10. Explain how Linux mechanisms work, especially when the system starts.. 
+11. How can we enable communication between 500 AWS accounts internally?
+12. Difference between 𝗜𝗥 and 𝗦𝗥 
+13. What about the 𝗺𝗼𝗻𝗶𝘁𝗼𝗿𝗶𝗻𝗴 part. Do you have any exposure to that? 
+14. What are the things you will do with respect to the 𝗺𝗼𝗻𝗶𝘁𝗼𝗿𝗶𝗻𝗴? 
+15. Define 𝗹𝗼𝗴𝘀 and 𝗺𝗲𝘁𝗿𝗶𝗰𝘀 
+16. So let's consider, in your 𝗱𝗮𝘀𝗵𝗯𝗼𝗮𝗿𝗱, you observed from one application or one 𝗰𝗹𝘂𝘀𝘁𝗲𝗿 the 𝘂𝘁𝗶𝗹𝗶𝘇𝗮𝘁𝗶𝗼𝗻 was 𝗵𝗶𝗴𝗵. Which were you can identify using the 𝗱𝗮𝘀𝗵𝗯𝗼𝗮𝗿𝗱 with the 𝗺𝗲𝘁𝗿𝗶𝗰𝘀 which is already created. So what will be the first step and how will you 𝗳𝗶𝘅 the 𝗶𝘀𝘀𝘂𝗲. 
+17. Do you have any experience in 𝗰𝗿𝗲𝗮𝘁𝗶𝗻𝗴 the 𝗺𝗼𝗻𝗶𝘁𝗼𝗿𝘀? 
+18. What is a sidecar container in Kubernetes, and what are its use cases?
+19. Do you have any exposure to 𝗜𝗔𝗖 tools like 𝗧𝗲𝗿𝗿𝗮𝗳𝗼𝗿𝗺? 
+20. Write some sample 𝗗𝗼𝗰𝗸𝗲𝗿𝗳𝗶𝗹𝗲 to create an 𝗡𝗴𝗶𝗻𝘅 𝗶𝗺𝗮𝗴𝗲 
+21. What do you know about 𝘁𝗲𝘀𝘁𝗶𝗻𝗴
+
+****Common interview Question For Cloud & DevOps****
+1. What scripting languages are you familiar with?
+2. What are artifacts in GitLab CI?
+3. What is a private module registry in Terraform?
+4. If you delete the local Terraform state file and it's not stored in S3 or DynamoDB, how can you recover it?
+5. How do you import resources into Terraform?
+6. What is a dynamic block in Terraform?
+7. How can you create EC2 instances in two different AWS accounts simultaneously using Terraform?
+8. How do you handle an error stating that the resource already exists when creating resources with Terraform?
+9. How does Terraform refresh work?
+10. How would you upgrade Terraform plugins?
+11. What are the different types of Kubernetes volumes?
+12. If a pod is in a crash loop, what might be the reasons, and how can you recover it?
+13. What is the difference between StatefulSet and DaemonSet?
+14. What is a sidecar container in Kubernetes, and what are its use cases?
+15. If pods fail to start during a rolling update, what strategy would you use to identify the issue and rollback?
+16. How can we enable communication between 500 AWS accounts internally?
+17. How to configure a solution where a Lambda function triggers on an S3 upload and updates DynamoDB?
+18. What is the standard port for RDP?
+19. How do you configure a Windows EC2 instance to join an Active Directory domain?
+20. How can you copy files from a Linux server to an S3 bucket?
+21. What permissions do you need to grant for that S3 bucket?
+22. What are the different types of VPC endpoints and when do you use them?
+23. How to resolve an image pullback error when using an Alpine image pushed to ECR in a pipeline?
+24. What is the maximum size of an S3 object?
+25. What encryption options do we have in S3?
+26. Can you explain IAM user, IAM role, and IAM group in AWS?
+27. What is the difference between an IAM role and an IAM policy document?
+28. What are inline policies and managed policies?
+29. How can we add a load balancer to Route 53?
+30. What are A records and CNAME records?
+31. What is the use of a target group in a load balancer?
+32. If a target group is unhealthy, what might be the reasons?
+33. Can you share your screen and write a Jenkins pipeline?
+34. How do you write parallel jobs in a Jenkins pipeline?
+----------------------------------------------------------------------------------
+Maven & Jenkins Cheat Sheet for DevOps Engineers!
+
+For DevOps engineers, Maven and Jenkins are essential for streamlined builds and CI/CD. Here’s a quick guide to master these tools:
+
+🔹 Maven Essentials 
+ - Lifecycle Phases: From `mvn compile` to `mvn test`, `mvn package`, and `mvn install`, Maven automates the entire build process.
+ - POM.xml: Central config for dependencies, project metadata, and output (.jar/.war/.ear).
+ - Quick Build: Use `mvn clean package` to clean and package code in one command.
+
+🔹 Jenkins Setup 
+ - Installation: Install Java and Jenkins on an EC2 instance, start Jenkins with `systemctl start jenkins`, and automate CI/CD seamlessly.
+ - Pipeline Integration: Build, test, and deploy projects automatically with Jenkins pipelines.
+
+🚀 Why It’s Essential 
+Mastering Maven & Jenkins brings efficiency to builds, testing, and deployment, essential for any DevOps workflow. Get hands-on and take your DevOps skills to the next level! 💡
+---------------------------------------------------------------------------------
+Recently Faced These Interview Questions – Sharing to Help You Ace Yours! 
+
+Designation : AWS DEVOPS ENGINEER 
+Experience : 3-5 years 
+
+1.Explain Jenkins CI/CD.
+2.Write Terraform code for an S3 bucket and attach a policy. 
+3.I want to run my job today at 5 pm how do you configure it? 
+4.What IAM policy? 
+5.Write a Terraform code for EC2? 
+6.Explain about GIT Branching in your project. 
+7.Write a sample playbook. 
+8.What are Glacier and Snowball? 
+9.Where do you check build logs in Jenkins? 
+10.What is CORS in s3? 
+11.What has required one resource it was to communicate with other resources? 
+12. How can we pass an argument to Docker File? 
+13. What are deployment strategies? 
+14. What is called an application load balancer?
+15. How Kube proxy will allocate the Ip address to pods?
+16. How u will configure VPC 
+17. If there is suddenly the file is deleted in git how do you get it back? 
+18. How do you configure the job in Jenkins? 
+19. Write a script for how to push the repository and build the job in Jenkins. 
+20. What is the use of the Jira tool? 
+21. As a DevOps engineer why do we use Jira Tool?
+-------------------------------------------------------------------------------------------------
+𝟏.𝐓𝐞𝐥𝐥 𝐦𝐞 𝐚𝐛𝐨𝐮𝐭 𝐲𝐨𝐮𝐫 𝐩𝐫𝐨𝐣𝐞𝐜𝐭
+
+My project is about automating deployment pipelines with CI/CD tools, managing infrastructure with Terraform, and using Kubernetes to organize containers.
+
+𝟐.𝐇𝐨𝐰 𝐝𝐨𝐞𝐬 𝐆𝐢𝐭𝐋𝐚𝐛 𝐭𝐫𝐢𝐠𝐠𝐞𝐫 𝐩𝐢𝐩𝐞𝐥𝐢𝐧𝐞𝐬 𝐚𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐜𝐚𝐥𝐥𝐲 𝐰𝐡𝐞𝐧 𝐚 𝐝𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 𝐩𝐮𝐬𝐡𝐞𝐬 𝐜𝐨𝐝𝐞?
+
+GitLab triggers pipelines automatically when a developer pushes code by using webhooks.
+some additional methods by which GitLab can trigger pipelines automatically:
+1. Merge Requests
+2. Scheduled Pipelines
+3. API Triggers
+4. Manual Triggers
+
+𝟑.𝐇𝐨𝐰 𝐝𝐨 𝐲𝐨𝐮 𝐝𝐞𝐜𝐥𝐚𝐫𝐞 𝐝𝐞𝐩𝐞𝐧𝐝𝐞𝐧𝐭 𝐬𝐭𝐚𝐠𝐞𝐬 𝐢𝐧 𝐚 𝐂𝐈/𝐂𝐃 𝐘𝐀𝐌𝐋 𝐟𝐢𝐥𝐞?
+
+We can declare dependent stages using the stages keyword and specifying the order of execution. For example:
+
+stages:
+ - build
+ - test
+ - deploy
+
+𝟒. 𝐖𝐡𝐚𝐭 𝐢𝐬 `𝐭𝐞𝐫𝐫𝐚𝐟𝐨𝐫𝐦 𝐢𝐧𝐢𝐭`?
+
+This command initializes a Terraform working directory by downloading necessary provider plugins and setting up the backend configuration.
+
+𝟓.𝐖𝐡𝐚𝐭 𝐢𝐬 `𝐛𝐚𝐜𝐤𝐞𝐧𝐝.𝐭𝐟`?
+
+This file typically contains configuration settings for remote state storage, defining how and where Terraform state is stored (e.g., S3, Azure Blob Storage).
+
+𝟔. 𝐖𝐡𝐚𝐭 𝐝𝐨𝐞𝐬 `𝐭𝐞𝐫𝐫𝐚𝐟𝐨𝐫𝐦 𝐩𝐥𝐚𝐧 𝐝𝐨?
+
+This command generates an execution plan, showing what actions Terraform will take to change the current state to match the desired state defined in the configuration files.
+
+𝟕. 𝐖𝐡𝐚𝐭 𝐡𝐚𝐩𝐩𝐞𝐧𝐬 𝐢𝐟 𝐲𝐨𝐮 𝐠𝐢𝐯𝐞 𝐭𝐡𝐞 𝐰𝐫𝐨𝐧𝐠 𝐜𝐨𝐧𝐟𝐢𝐠𝐮𝐫𝐚𝐭𝐢𝐨𝐧 𝐨𝐫 𝐜𝐨𝐝𝐞 𝐢𝐧 𝐓𝐞𝐫𝐫𝐚𝐟𝐨𝐫𝐦 𝐚𝐧𝐝 𝐫𝐮𝐧 𝐢𝐭?
+
+Wrong Configuration: If you provide incorrect configuration, Terraform will fail to plan or apply changes, usually producing error messages that indicate the issues with the configuration.
+
+𝟖. 𝐖𝐡𝐞𝐫𝐞 𝐝𝐨 𝐲𝐨𝐮 𝐬𝐭𝐨𝐫𝐞 𝐃𝐨𝐜𝐤𝐞𝐫 𝐢𝐦𝐚𝐠𝐞𝐬?
+
+Docker images are commonly stored in registries like Docker Hub, AWS ECR, or other private registries.
+
+𝟗. 𝐃𝐞𝐬𝐜𝐫𝐢𝐛𝐞 𝐭𝐡𝐞 `𝐩𝐨𝐝` 𝐜𝐨𝐦𝐦𝐚𝐧𝐝?
+
+In Kubernetes, the pod command is part of the kubectl command-line tool, which is used to manage Kubernetes clusters.
+
+1.𝐆𝐞𝐭 𝐏𝐨𝐝𝐬:
+To list all pods in a namespace:
+
+kubectl get pods
+
+2. 𝐃𝐞𝐬𝐜𝐫𝐢𝐛𝐞 𝐚 𝐏𝐨𝐝:
+To get detailed information about a specific pod:
+
+kubectl describe pod <pod-name>
+
+3. 𝐂𝐫𝐞𝐚𝐭𝐞 𝐚 𝐏𝐨𝐝:
+To create a pod from a YAML configuration file:
+
+kubectl apply -f <pod-definition.yaml>
+
+4. 𝐃𝐞𝐥𝐞𝐭𝐞 𝐚 𝐏𝐨𝐝:
+To delete a specific pod:
+
+kubectl delete pod <pod-name>
+
+5.𝐋𝐨𝐠𝐬:
+To view the logs of a pod:
+kubectl logs <pod-name>
+
+𝟏𝟎. 𝐇𝐨𝐰 𝐝𝐨 𝐲𝐨𝐮 𝐝𝐞𝐜𝐥𝐚𝐫𝐞 𝐜𝐨𝐧𝐭𝐞𝐱𝐭 𝐢𝐧 𝐊𝐮𝐛𝐞𝐫𝐧𝐞𝐭𝐞𝐬 ?
+
+You declare context using the kubectl config command, specifying the cluster, user, and namespace.
+
+----------------------------------------------------------------------------------------------------
+Hello All, please find today interview L1 Discussion questions with Wipro
+Q) What is your understanding of DevOps ? (First Question)
+Q) you mentioned in resume that setup of a Jenkins CICD pipeline to automate code integration and deployment achieved 25 % faster time to market, how you calculated this 25% on which basis ?
+Note: if you mentioned any % achieved then plan to explain how you calculated that % achievement
+Q) What is terraform taint ?
+Q) What are parameters in terraform ?
+Q) What is AWS Instance store ?
+Q) How did you handle cost management and alerting in AWS compared to your previous approach ?
+Q) What are critical challanges you faced while using in your Organization ?
+Q) What is CI process ?
+Q) How you configured CICD pipelines in your organization ?
+Q) What is AWS organization ?
+Q) What are Security and Governance services in AWS ?
+Q) What are the four R's in application cloud migration ?
+Q) How do connect private servers to internet ? (this is common Question in last 3 interviews)
+Q) What is hosted zone and why we use ? ( Common question in 2 interviews)
+Q) What is state file and where do you store it and explain state locking ?
+Q) What is your organization branching strategy ?
+Q) Using shell script get date every day at 2:00 AM using crontab ?
+Q) Have you used SQS and SNS in AWS ?
+
+Recently Faced These Interview Questions – Sharing to Help You Ace Yours! 
+
+Designation : AWS DEVOPS ENGINEER 
+Experience : 3-5 years 
+
+1. How do you uncommit the changes that have already been pushed to GitHub? 
+2. If there is suddenly the file is deleted in git how do you get it back? 
+3. Can you increase the size of the root volume without shutting down the instance?
+4. If you lost the .pem file then how will you connect to EC2? 
+5. S3 bucket having a policy for only read-only but you’re having full access for you? Can you modify s3 objects? 
+6. Difference between Classic ELB and Application ELB?
+7. How many subnets are assigned to the routing table? 
+8. In your VPC all IPS are finished you require resources how to provision it? 
+9. Are you only using cloud watch for monitoring?
+10.If your using load balancing in 2 availability zones den which load balancer you should use?
+11. can you write docker file where Linux env condition deploy static webserver 
+12. Is it possible to run any VM in AWS without creating any EC2 instance ? 
+13. I want to create a pipeline in Jenkins which needs to have 10 different stages and based on my input it needs to execute some stages not every stages how you will configure that .
+14. What are the Terraform modules? Have used any modules in the project?
+15. Is it possible to configure communication between 2 servers those are having private access
+16. What happens when you delete /var/lib/docker/overlay?
+17. Write a simple script that calls with “Foo” prints “bar” and when called with “bar” prints “foo”. Every other option should print “Try 
+again”?
+18. Tell all the scenarios too implement the security in Kubernetes.
+19. Your EKS application is experiencing higher than expected traffic. How would you automatically scale the Pods?
+20. Your team needs to be alerted when the CPU usage of any Pod in your EKS cluster exceeds 80% for more than 5 minutes. How would you set this up?
+21. Your team wants a Grafana dashboard to visualize the HTTP request latency of your applications running in EKS. How would you achieve this?
+
+#interview hashtag#question for a hashtag#DevOps Engineer position.
+
+🔧 Git:
+
+What is the difference between GIT & GITHUB?
+What is a Distributed Version Control System (DVCS)?
+What is a Centralized Version Control System (CVCS)? Difference between DVCS & CVCS?
+How to overcome conflicts in Git?
+What is Git clone, git pull, and git patch?
+What are git merge and git stash?
+
+☁️ AWS:
+
+What is S3?
+What is Block Storage?
+How to grant access to a specific IP on S3?
+What are ASG policies?
+What is ElasticSearch?
+Difference between Application Load Balancer (ALB) and Network Load Balancer (NLB)?
+How to configure VPC peering?
+
+⚙️ Kubernetes, Terraform:
+
+What are the main components of Kubernetes?
+What is the flow of pod creation?
+What are services in Kubernetes?
+What is Continuous Delivery & Continuous Deployment?
+What are the key operations in Terraform?
+
+Day to Day activities of a DevOps Engineer ☀️
+
+Here’s a typical schedule:
+
+11:00 AM – Morning Sync
+Start the day with a quick team stand-up. We discuss ongoing tasks, deployment schedules, and any blockers. Communication keeps us aligned!
+
+11:30 AM – Monitoring Checks
+Dive into dashboards with Prometheus, Grafana. Scan for any unusual spikes or alerts. If there’s a red flag, it’s troubleshooting time!
+
+12:30 PM – Pipeline Optimizations
+Focus on improving CI/CD pipelines in Jenkins, GitHub Actions, or ArgoCD. Tweak workflows, automate tests, or add new steps to boost deployment efficiency.
+
+02:00 PM – Lunch Break
+
+03:30 PM – Automating Tasks
+Time to tackle routine tasks with scripts or manage infrastructure with Terraform. Automating manual work helps us scale and stay efficient.
+
+07:00 PM – Collaboration & Troubleshooting
+Spend time working with developers, DBAs, and security teams to solve issues, optimize systems, and brainstorm improvements.
+
+08:00 PM – End-of-Day Checks
+Review system health and double-check any final deployments. Ensure all systems are stable before signing off for the day.
+
+🔁 Repeat tomorrow, because in DevOps, we’re always evolving and improving
+----------------------------------------------------------------------------------
+
+1. What is a Pod in Kubernetes? Create a pod.yaml for a single-container pod running Nginx.
+2. What is a Deployment in Kubernetes? Write a deployment.yaml for deploying 3 replicas of an Nginx container.
+3. What is a Service in Kubernetes, and what are the types of Services?
+4. When would you use each type of Kubernetes Service (ClusterIP, NodePort, LoadBalancer, ExternalName)?
+5. Write a simple Terraform script to provision a virtual machine on AWS.
+6. Explain port, targetPort, and nodePort in a Kubernetes service.
+7. How would you expose a Kubernetes application externally?
+8. What is Helm, and what are its components (Chart, Repository, Release)?
+9. What is the difference between EXPOSE in a Dockerfile and docker run -p?
+10. How do you run Nginx on a Linux server using Docker?
+11. Explain HTTP, HTTPS, TCP, and UDP with examples.
+12. What is a Dockerfile? Write a basic Dockerfile for a Node.js application.
+13. What is a base image in Docker? Which base image would you use for Python or Node.js?
+14. How do you check for open ports on a Linux system?
+15. What are the benefits of using a firewall?
+16. What is the use of Ingress and Ingress Controller in Kubernetes?
+17. Explain the Kubernetes controllers: Deployment, StatefulSet, ReplicaSet, and DaemonSet.
+18. What is the difference between Deployment and ReplicaSet?
+19. What are Kubernetes Probes (Liveness, Readiness, Startup)?
+20. What is the difference between Stateful and Stateless applications? Give examples.
+21. What are Namespaces in Kubernetes?
+22. What is Port Forwarding in Kubernetes?
+---------------------------------------------------
+1. How do you uncommit the changes that have already been pushed to GitHub?
+2. If there is suddenly the file is deleted in git how do you get it back?
+3. Can you increase the size of the root volume without shutting down
+the instance?
+4. If you lost the .pem file then how will you connect to EC2?
+5. S3 bucket having a policy for only read-only but you’re having full access for you? Can you modify s3 objects?
+6. Difference between Classic ELB and Application ELB?
+7. How many subnets are assigned to the routing table?
+8. In your VPC all IPs are finished you require resources how to provision it?
+9. Are you only using cloud watch for monitoring?
+10. If you are using load balancing in 2 availability zones then which load
+balancer you should use?
+11. can you write docker file where Linux env condition deploy static webserver
+12. Is it possible to run any VM in AWS without creating any EC2 instance ?
+13. I want to create a pipeline in Jenkins which needs to have 10 different stages and based on my input it needs to execute some stages not every stages how you will configure that.
+14. What are the Terraform modules? Have used any modules in the project?
+15. Is it possible to configure communication between 2 servers those
+are having private access
+16. What happens when you delete /var/lib/docker/overlay?
+17. Write a simple script that calls with “Foo” prints “bar” and when called with “bar” prints “foo”. Every other option should print “Try
+again”?
+18. Tell all the scenarios too implement the security in Kubernetes.
+19. Your EKS application is experiencing higher than expected traffic.
+How would you automatically scale the Pods?
+20. Your team needs to be alerted when the CPU usage of any Pod in your EKS cluster exceeds 80% for more than 5 minutes. How would you set this up?
+21. Your team wants a Grafana dashboard to visualize the HTTP request latency of your applications running in EKS. How would you achieve this?
+----------------------------------------------------------------
+1. What is a Pod in Kubernetes?
+
+ A Pod is the smallest deployable unit in Kubernetes. It represents a single instance of a running process in your cluster and can contain one or more containers.
+yaml
+CopyEdit
+# pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+ name: nginx-pod
+spec:
+ containers:
+ - name: nginx
+ image: nginx
+ ports:
+ - containerPort: 80
+
+2. What is a Deployment in Kubernetes? Write a deployment.yaml for deploying 3 replicas of an Nginx container.
+
+ A Deployment is a controller that ensures the desired number of pod replicas are running. It allows rolling updates and rollbacks.
+yaml
+CopyEdit
+# deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: nginx-deployment
+spec:
+ replicas: 3
+ selector:
+ matchLabels:
+ app: nginx
+ template:
+ metadata:
+ labels:
+ app: nginx
+ spec:
+ containers:
+ - name: nginx
+ image: nginx
+ ports:
+ - containerPort: 80
+
+3. What is a Service in Kubernetes, and what are the types?
+
+ A Service exposes a set of pods as a network service.
+ Types:
+ClusterIP (default) – internal access within the cluster
+NodePort – exposes service on each Node’s IP at a static port
+LoadBalancer – exposes service via a cloud provider’s load balancer
+ExternalName – maps service to an external DNS name
+
+4. When would you use each type of Kubernetes Service (ClusterIP, NodePort, LoadBalancer, ExternalName)?
+
+ClusterIP – internal communication (e.g., between microservices)
+NodePort – expose service for testing/dev on a static port
+LoadBalancer – expose to the internet in cloud environments
+ExternalName – route to external services like database.example.com
+
+5. Explain port, targetPort, and nodePort in a Service.
+
+port: Port exposed by the Service (used inside the cluster)
+targetPort: Port on the Pod the traffic is forwarded to
+nodePort: (for NodePort type) External port on the node
+
+6. How would you expose a Kubernetes app externally?
+
+Use a LoadBalancer service (cloud)
+Use NodePort (local/testing)
+Use Ingress with an Ingress Controller
+
+7. What is Helm, and what are its components (Chart, Repository, Release)?
+
+Chart: A packaged Kubernetes application (YAML + templates)
+Repository: Stores charts
+Release: A deployed instance of a chart in a cluster
+
+8. What is the difference between EXPOSE in a Dockerfile and docker run -p?
+
+EXPOSE (Dockerfile): declares the container listens on a port (docs only)
+-p (docker run): actually maps a container port to a host port
+
+9. How do you run Nginx on a Linux server using Docker?
+bash
+CopyEdit
+docker run -d -p 80:80 --name nginx nginx
+-------------------------------------------
+Most Important DevOps Terms You Should Know
+
+1. Terraform: Open source tool for defining and provisioning infrastructure as code.
+2. Version Control: System to record and manage changes to files over time.
+3. Virtual Machine (VM): Software-based computer running an OS and applications.
+4. YAML: Human-readable data serialization standard used for configuration files.
+5. Agile: Development methodology for continuous iteration of development and testing.
+6. Automation: Technology to perform tasks without human intervention, essential for CI/CD.
+7. Cloud Computing: Delivery of computing services over the internet for scalability.
+8. Container: Executable package containing everything needed to run software consistently.
+9. Docker: Platform for developing, shipping, and running applications inside containers.
+10. Kubernetes: Platform for automating deployment, scaling, and operations of application containers.
+11. Microservices: Architectural style of structuring applications as small, autonomous services.
+12. Monitoring: Collecting and analyzing data to track application and infrastructure performance.
+13. Serverless: Cloud execution model with dynamic resource management by the provider.
+14. SLA (Service Level Agreement): Contract specifying performance standards between a provider and a customer.
+15. Source Control: Practice of tracking and managing code changes.
+
+By understanding these terms, you can effectively navigate the DevOps landscape and contribute to your team's success.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Git:
+
+What will happen if you do `git fetch`?
+
+  `git fetch` updates your local repository with the latest changes from the remote repository, but it doesn't modify your working directory or merge those changes into your current branch. 
+  It just pulls the new commits and data.
+
+What's the difference between `git merge` and `git rebase`?
+	* `git merge` combines changes from one branch into another, creating a new merge commit. It preserves the history of both branches.
+	* `git rebase` moves or "replays" commits from one branch onto another, creating a linear history without merge commits. It rewrites the commit history.
+	Merge: Preserves the commit history of both branches, creating a new merge commit. 
+	Rebase: Rewrites commit history, proving a liner and clear history.
+
+What's the difference between `git pull` and `git fetch`?
+	* `git pull`: Downloads updates from the remote repository and automatically merges them into your current local branch.
+	* `git fetch`: Downloads updates from the remote repository but doesn't merge them into your local branch.
+
+Explain about GIT Branching in your project:
+	In a Git project, branching allows multiple developers to work on different features or fixes simultaneously without interfering with each other’s work. Typically:
+		1. Main branch (main or master): The stable production-ready branch.
+		2. Feature branches: Used for developing new features (e.g., feature/login-page).
+		3. Bugfix branches: For fixing bugs (e.g., bugfix/crash-on-login).
+		4. Release branches: For preparing production releases (e.g., release/v1.0).
+		5. Hotfix branches: For urgent fixes to production (e.g., hotfix/critical-fix).
+	After work on a branch is complete, it's merged back into the main branch.
+
+What is the git workflow?
+	A common Git workflow involves the following steps:
+
+		1. Clone the repository: git clone <repo-url>.
+		2. Create a new branch for your work: git checkout -b <branch-name>.
+		3. Make changes to the code and commit them: git add . and git commit -m "message".
+		4. Push your branch to the remote repository: git push origin <branch-name>.
+		5. Create a Pull Request (PR) to merge your changes into the main branch.
+		6. Review and merge the PR after approval.
+
+	This workflow keeps the main branch stable while allowing for parallel development.
+
+What is git cherry pick?
+	Git cherry-pick is a command that lets you apply a specific commit from one branch to another. You pick a commit by its ID, and Git copies its changes into your current branch.
+	
+	
+Jenkins:
+
+What is the difference between continuous Delivery and Deployment?
+
+  Continuous Delivery ensures that code is always ready to be deployed to production, but deployment requires manual approval.
+  Continuous Deployment automates the entire process, deploying every change to production automatically without manual intervention.
+  
+How to run a particular stage in jenkins pipeline?
+
+  To run a particular stage in a Jenkins pipeline, you can use the "Build with Parameters" option and specify the stage using the `when` condition or manually trigger the 
+  specific stage with `input` step or by using a script in the pipeline. Another approach is to comment out the other stages temporarily and run the desired one.
+
+While running a job in jenkins, build got failed. How will you resolve that?
+	To resolve a failed Jenkins build:
+
+		1. Check Logs: Review the build console output for error details.
+		2. Identify Cause: Look for issues like syntax errors, missing dependencies, or configuration problems.
+		3. Fix Issue: Update code, pipeline script, or environment (e.g., install missing plugins or dependencies).
+		4. Test Locally: Reproduce and verify the fix locally if possible.
+		5. Retry Build: Trigger the job again in Jenkins.
+		6. Monitor: Ensure the build completes successfully or repeat steps if it fails again.
+	
+		What type of error we may get?
+		Common errors in a failed Jenkins build include:
+
+		1. Syntax Errors: Incorrect code or script syntax in the pipeline or application.
+		2. Dependency Issues: Missing libraries, packages, or plugins required for the build.
+		3. Configuration Errors: Wrong environment variables, credentials, or Jenkins settings.
+		4. Network Issues: Failure to connect to repositories, APIs, or external services.
+		5. Permission Errors: Insufficient access to files, directories, or resources.
+		6. Resource Limits: Insufficient memory, CPU, or disk space.
+		7. Test Failures: Unit or integration tests failing due to code issues.
+		8. Timeout Errors: Build taking too long, exceeding configured time limits.
+
+Docker:
+
+What is the Home Directory(path) of Docker?
+
+  Linux: /var/lib/docker
+  
+How to integrate a docker server in Jenkins?
+
+  To integrate a Docker server in Jenkins:
+  1. Install Docker on the Jenkins server.
+  2. Install the Docker plugin in Jenkins (Manage Jenkins > Manage Plugins > Docker Plugin).
+  3. Configure Docker in Jenkins:
+      * Go to Manage Jenkins > Configure System.
+      * Under Cloud, add a Docker Cloud and provide Docker server details (e.g., Docker API URL, credentials).
+  4. Use Docker in Jenkins Pipeline with commands like docker build, docker run, or docker-compose in your Jenkinsfile.
+  This allows Jenkins to interact with Docker for building, testing, and deploying containers.
+
+Write a dockerfile using a linux and a webserver?
+
+  # Use an official Linux base image (Ubuntu in this case)
+    FROM ubuntu:latest
+  # Install Nginx web server
+    RUN apt-get update && apt-get install -y nginx
+  # Copy website files to the Nginx default directory
+    COPY ./html /var/www/html
+  # Expose port 80 to access the web server
+    EXPOSE 80
+  # Start Nginx when the container runs
+    CMD ["nginx", "-g", "daemon off;"]
+	
+What's the difference between CMD and ENTRYPOINT in Docker?
+
+	• CMD provides default commands or arguments that run when the container starts.
+	  You can override it by passing a command when running the container.
+	• ENTRYPOINT defines the main executable for the container. It always runs, and
+	  cannot be overridden the same way.
+	• If you try to pass a command when ENTRYPOINT is defined, it will append the
+	  command to ENTRYPOINT instead of replacing it.
+	• When used together, CMD can act as default arguments for the ENTRYPOINT
+	  executable.
+	• This combination gives you flexibility and control: ENTRYPOINT ensures a
+	  specific binary runs, while CMD provides modifiable defaults. 
+
+	Best practice: Combine both for consistent yet flexible container behavior.
+
+What's the difference between COPY and ADD in Docker?
+	• COPY is used to copy files and directories from the host to the image.
+	• ADD does the same but also supports downloading files from URLs and
+	  automatically extracting .tar archives.
+	Use COPY by default, and use ADD only when you need its additional features.
+
+What's the difference between ARG and ENV in Docker?
+	• ARG:
+		o Used in Dockerfile with ARG instruction.
+		o Only available during build time (docker build).
+		o Passed at build time using --build-arg (e.g., docker build --build-arg
+		  VAR=value).
+		o Not available in the running container unless set as ENV.
+	• ENV:
+		o Used in Dockerfile with ENV instruction.
+		o Available during build time and runtime (inside the container).
+		o Can be overridden at runtime using -e (e.g., docker run -e VAR=value).
+	• Can ARG be passed at runtime?
+		o No, ARG is only for build time. It cannot be passed during docker run.
+		  Use ENV for runtime variables. 
+	
+Where you used docker to solve a specific problem?
+	I used Docker to create consistent development environments for a team, ensuring all developers had the same dependencies and versions, eliminating "works on my machine" issues.
+	
+There are multiple stopped containers and unused network taking up spaces. How you will clean up these resources effectively?
+	$ docker system prune -a
+	Be cautious with prune commands as they permanently delete resources.
+	
+Kubernetes:
+
+Architecture of Kubernetes?
+
+	Kubernetes architecture consists of two main components:
+
+	1. Control Plane:
+		* API Server: Manages API requests and communicates with other components.
+		* Scheduler: Assigns workloads (pods) to nodes.
+		* Controller Manager: Ensures desired state of the system (e.g., scaling, replication).
+		* etcd: Key-value store for cluster data.
+	2. Node (Worker Node):
+		* Kubelet: Ensures containers run in pods as expected.
+		* Kube Proxy: Manages network routing and load balancing for services.
+		* Container Runtime: Runs containers (e.g., Docker, containerd).
+
+	The Control Plane manages the cluster, while Nodes run the workloads.
+
+What's the difference between Kubernetes deployment and Statefulset?
+	* Deployment: Used for stateless applications, where each pod is identical and can be replaced easily. It ensures desired replicas are running and updates pods in a rolling manner.
+
+	* StatefulSet: Used for stateful applications, where each pod has a unique identity, persistent storage, and stable network identity. It ensures proper ordering and  stable storage for each pod.
+
+What is namespace?
+	namespaces are used for dividing cluster resources between multiple users. They are meant for environments where there are many users spread across projects or teams and provide a scope of resources.
+
+What are the different services available within kubernetes?
+	Kubernetes services include:
+
+		1. ClusterIP: Default service, exposes a pod internally within the cluster.
+		2. NodePort: Exposes the service on each node's IP at a static port.
+		3. LoadBalancer: Exposes the service externally using a cloud provider's load balancer.
+		4. ExternalName: Maps a service to an external DNS name without creating a proxy.
+		5. Headless: Allows direct access to individual pods without a single IP, often used for stateful applications.
+		
+What is the types deployment stategy of kubernetes?
+	Kubernetes deployment strategies include:
+
+		1. Recreate: Terminates all old pods and creates new ones.
+		2. Rolling Update: Gradually replaces old pods with new ones, ensuring minimal downtime.
+		3. Blue/Green: Deploys new version alongside old, then switches traffic to new version.
+		4. Canary: Deploys new version to a small subset of users before full rollout.
+		5. A/B Testing: Tests new version with specific user groups based on conditions.
+
+Ansible:
+
+How to run a specific task on Ansible Playbook which contains 10 tasks?
+	Tag the task in the playbook:
+
+	- name: Example task
+	  ansible.builtin.debug:
+		msg: "Running specific task"
+	  tags: mytask
+	  
+	Run the playbook with the --tags option:
+
+	ansible-playbook playbook.yml --tags mytask
+
+	Note: Only tasks with the specified tag (mytask) will run.
+	
+Terraform:
+
+What is statefile?
+    A statefile in Terraform is a JSON file (terraform.tfstate) that tracks the current state of your infrastructure. It records resource configurations, attributes, and dependencies, allowing Terraform to manage and update resources accurately.	
+	statefile contains the history of deployment.
+When state file will be created?
+    The Terraform statefile (terraform.tfstate) is created when you run `terraform apply` or `terraform init` followed by `terraform plan` and `terraform apply` for the first time in a project directory.	
+
+----------------------------------------------------------------------------------------------------------------------
+
+#Docker Scenario-Based Interview Questions & Answers:
+
+# Scenario_1
+	You have a docker container running a web server, but you need to update the application code inside it.
+	How would you approch this?
+	
+	Approach:
+		1. Update the application code in the project directory.
+		2. Rebuild the Docker image with the updated code: docker build -t image-name .
+		3. Stop and remove the old container: docker stop container-name && docker rm container-name
+		4. Run a new container with the updated image: docker run -d -p port:port image-name
+		5. Alternatively, use a volume to mount updated code without rebuilding: docker run -v /local/code:/container/code ...
+
+# Scenario_2
+	Your team is deploying a microservices architecture using Docker containers.
+	How would you orchestrate and manage these containers effectively?
+	
+	Approach:
+		1. Use Kubernetes or Docker Compose for orchestration.
+			* Docker Compose: Define services in docker-compose.yml for local development.
+			* Kubernetes: Use deployments, services, and ingress for production.
+		2. Manage networking with service discovery and load balancing.
+		3. Monitor with tools like Prometheus and Grafana.
+		4. Automate deployments with CI/CD pipelines (e.g., Jenkins, GitLab CI).
+
+# Scenario_3
+	You have encountered a problem where a Docker container keeps crashing without any clear error message.
+	How would you troubleshoot and diagnose this issue?
+	
+	Approach:
+		1. Check container logs: docker logs container-name
+		2. Inspect container details: docker inspect container-name
+		3. Run the container interactively: docker run -it image-name /bin/sh to debug.
+		4. Verify resource limits (CPU, memory) and configuration (e.g., env variables).
+		5. Review application errors or missing dependencies.
+		6. Test with a minimal setup to isolate the issue.
+
+# Scenario_4
+	Your team needs to share data between multiple Docker containers.
+	How would you accomplish this while maintaining isolation between the containers?
+	
+	Approach:
+		1. Use Docker Volumes to share data: docker volume create shared-volume
+		2. Mount the volume to multiple containers: docker run -v shared-volume:/data ...
+		3. Alternatively, use a shared network for communication (e.g., via APIs).
+		4. Ensure proper permissions and isolation with user namespaces and access controls.
+
+# Scenario_5
+	You need to ensure that your Docker containers are secure and compliant with company policies.
+	What security best practices would you implement?
+	
+	Best Practices:
+		1. Use minimal base images (e.g., alpine).
+		2. Scan images for vulnerabilities: docker scan image-name
+		3. Run containers as non-root users: USER nonroot in Dockerfile.
+		4. Limit container privileges: Use --cap-drop and --read-only flags.
+		5. Enable Docker Content Trust for image signing.
+		6. Use secrets management for sensitive data (e.g., Docker secrets or Kubernetes secrets).
+		7. Regularly update images and apply security patches.
+
+#Kubernetes Scenario-Based Interview Questions & Answers:
+
+# Scenario_1
+	Your company is migrating its monolithic application to a microservices architecture on Kubernetes. 
+	How would you plan and execute this migration?
+# Scenario_2 
+	You have a stateful application that requires persistent storage in Kubernetes. 
+	How would you configure persistent storage for this application?
+# Scenario_3
+	You're experiencing performance issues with your Kubernetes cluster.
+	How would you diagnose and resolve these issues?
+# Scenario_4
+	You need to deploy a kubernetes application across multiple environments(Dev, Staging, Prod) with different configurations.
+	How would you manage environment-specific configurations in Kubernetes?
+# Scenario_5
+	Your team wants to implement rolling updates for a Kubernetes deployment to minimize downtime during application upgrades.
+	How would you achieve this?
+
+	
+	
+
