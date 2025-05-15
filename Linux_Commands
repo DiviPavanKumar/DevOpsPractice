@@ -244,6 +244,11 @@ $ crintab -e Enter
    
 $set-hostname <Name>
 
+1. directory of nginx configuration?
+  /etc/nginx/nginx.conf
+2. what is nginx root directory?
+  /usr/share/nginx/html
+
 
 
 
